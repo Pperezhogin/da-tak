@@ -5,8 +5,6 @@
 #include <iostream>
 #include <calc.h>
 
-BOOST_AUTO_TEST_SUITE(CalculatorTests)
-
 BOOST_AUTO_TEST_CASE(PlusTest)
 {
     Calculator calc;
@@ -16,7 +14,5 @@ BOOST_AUTO_TEST_CASE(PlusTest)
 BOOST_AUTO_TEST_CASE(MinusTest)
 {
     Calculator calc;
-    BOOST_CHECK_EQUAL(calc.minus( 2, 1 ), 1);
+    BOOST_CHECK_EQUAL(calc.minus( 2, 1 ), -1);
 }
-
-BOOST_AUTO_TEST_SUITE_END()
