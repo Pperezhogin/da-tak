@@ -1,3 +1,3 @@
-set( Calc_source calc.cpp )
+set(main_source main.cpp)
 
-add_library( calc STATIC ${Calc_source} )
+add_executable(main ${main_source})
